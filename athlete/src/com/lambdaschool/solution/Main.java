@@ -43,5 +43,10 @@ public class Main
         app = injector.getProcess();
         app.displayAthlete();
 
+        // Create a Baseball Court
+        courtInjector = new BaseballCourtCreationInjector();
+        app = courtInjector.getProcess();
+        app.displayCourt();
+
     }
 }
