@@ -1,7 +1,6 @@
 package com.lambdaschool.solution;
 
-public interface Processor
+public interface CourtCreation
 {
-  void displayAthlete();
   void displayCourt();
 }
