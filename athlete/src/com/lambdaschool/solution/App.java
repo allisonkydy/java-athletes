@@ -1,6 +1,6 @@
 package com.lambdaschool.solution;
 
-public class App
+public class App implements Processor
 {
   // constructor injection
   private AthleteCreation athleteCreation;
@@ -10,5 +10,11 @@ public class App
     this.athleteCreation = athleteCreation;
   }
 
-
+  @Override
+  public void displayAthlete(String sport)
+  {
+    System.out.println("************");
+    athleteCreation.display(sport);
+    System.out.println("************\n");
+  }
 }
